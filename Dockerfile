@@ -14,3 +14,6 @@ RUN mkdir -p $PINPOINT_HOME \
     && rm /tmp/pinpoint-agent-$PINPOINT_VERSION.tar.gz \
     && cd $PINPOINT_HOME \
     && ln -s pinpoint-bootstrap-PINPOINT_VERSION.jar pinpoint-bootstrap.jar
+
+# clean temporary files
+RUN rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* /var/cache/apt/*
