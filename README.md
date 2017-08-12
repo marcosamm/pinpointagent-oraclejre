@@ -9,14 +9,13 @@ docker run -it --rm \
    -v /PATH/TO/YOUR/SPRINGBOOT-APP.jar:/opt/apps/app.jar \
    marcosamm/pinpointagent-oraclejre \
    /bin/sh -c "java -javaagent:/opt/pinpoint-agent/pinpoint-bootstrap.jar -Dpinpoint.agentId=YOURAGENTID -Dpinpoint.applicationName=YOURAPPNAME -jar /opt/apps/app.jar"
-   
 ```
 
 ### To access
 http://localhost:8080
 
 
-### Note
+### Notes
 * The following environment variables can be used to set pinpoint-agent configuration properties (pinpoint.config):
    - COLLECTOR_IP
    - PROFILER_APPLICATIONSERVERTYPE
