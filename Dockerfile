@@ -12,7 +12,7 @@
 #                       -e PROFILER_JSON_GSON="true" \
 #                       pinpoint-agent
 
-FROM persapiens/oraclejre:8u144
+FROM persapiens/oraclejre:8u152
 MAINTAINER Marcos Alexandre de Melo Medeiros <marcosamm@gmail.com>
 
 ENV PINPOINT_VERSION 1.6.2
